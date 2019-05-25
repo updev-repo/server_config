@@ -22,6 +22,8 @@
     
     + postgresql 10.0
         + install
+            + `wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -`
+            + `sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'`
             + `sudo apt update`
             + `sudo apt install postgresql postgresql-contrib`
         + Start PostgreSQL Server
@@ -43,7 +45,7 @@
             + exit `\q`
              
         + give user permission to access postgresql
-            + `sudo nano /var/lib/psql/10/data/postgresql.conf` 
+            + `sudo nano /usr/lib/postgresql/10/data/postgresql.conf` 
             + allow or add line `listen_address = '*'`
             
             ```
