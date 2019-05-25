@@ -22,9 +22,10 @@
     
     + postgresql 10.0
         + install
-            + `rpm -Uvh https://yum.postgresql.org/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm`
-            + `yum install postgresql10-server postgresql10`
-            + `/usr/pgsql-10/bin/postgresql-10-setup initdb`
+            + `wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -`
+            + `sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'`
+            + `sudo apt update`
+            + `sudo apt install postgresql postgresql-contrib`
         + Start PostgreSQL Server
             + `sudo systemctl start postgresql-10.service`
             + `sudo systemctl enable postgresql-10.service`
@@ -44,7 +45,7 @@
             + exit `\q`
              
         + give user permission to access postgresql
-            + `sudo nano /var/lib/psql/10/data/postgresql.conf` 
+            + `sudo nano /usr/lib/postgresql/10/data/postgresql.conf` 
             + allow or add line `listen_address = '*'`
             
             ```
