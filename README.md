@@ -22,9 +22,8 @@
     
     + postgresql 10.0
         + install
-            + `rpm -Uvh https://yum.postgresql.org/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm`
-            + `yum install postgresql10-server postgresql10`
-            + `/usr/pgsql-10/bin/postgresql-10-setup initdb`
+            + `sudo apt update`
+            + `sudo apt install postgresql postgresql-contrib`
         + Start PostgreSQL Server
             + `sudo systemctl start postgresql-10.service`
             + `sudo systemctl enable postgresql-10.service`
