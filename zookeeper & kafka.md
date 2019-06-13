@@ -39,3 +39,6 @@ ExecStop=/opt/kafka/bin/kafka-server-stop.sh
 [Install]
 WantedBy=multi-user.target
 ```
+
++ RocksDB
+`sudo apt-get install python-virtualenv python-dev librocksdb
