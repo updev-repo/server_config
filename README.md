@@ -9,11 +9,11 @@
         
     + python
         + `sudo apt install python-pip`
-        + `pip install virtualenv`
+        + `sudo pip install virtualenv`
         
     + python3
         + `sudo apt install python3-pip`
-        + `pip3 install virtualenv` 
+        + `sudo pip3 install virtualenv` 
 
     + mysql
         + `sudo apt-get install mysql-server`
