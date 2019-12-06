@@ -36,6 +36,7 @@
         + Commands
             + `create role admin_user;`
             + `alter role admin_user with login;`
+            + for testing django default user should have permission to create db `alter role user CREATEDB`
             + `alter role admin_user  password 'xxxxxx'`
             + `create database xxx;`
             + `grant all privileges on database dropify to admin_user;`
