@@ -233,9 +233,9 @@
                 listen 80;
                 server_name xxxx.com;
             
-                location / {
-                    include /home/ubuntu/www/frontend/build;
-                    index index.html index.htm;
+               location / {
+                    root /home/ubuntu/xxx/admin/build;
+                    try_files $uri /index.html;
                 }
             
                 location /api/ {
@@ -254,8 +254,8 @@
                 server_name xxxx.com;
             
                 location / {
-                    include /home/ubuntu/www/frontend/build;
-                    index index.html index.htm;
+                    root /home/ubuntu/xxx/admin/build;
+                    try_files $uri /index.html;
                 }
             
                 location /api/ {
@@ -269,8 +269,8 @@
                 server_name admin.xxxx.com;
             
                 location / {
-                    include /home/ubuntu/www/admin/build;
-                    index index.html index.htm;
+                    root /home/ubuntu/xxx/admin/build;
+                    try_files $uri /index.html;
                 }
             
                 location /api/ {
