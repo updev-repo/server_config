@@ -42,6 +42,7 @@
             + `grant all privileges on database dropify to admin_user;`
             + show all database `\l`
             + use dropify database `\c dropify`
+            + import sql `\i /home/gui/backup/dump.sql`
             + show all tables `\dt`
             + exit `\q`
              
