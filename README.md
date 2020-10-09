@@ -32,6 +32,7 @@
         + Access db  
             + `su - postgres -c "psql"`
             + or `sudo su -l postgres`   `psql`
+            + `sudo -u postgres psql`
             
         + Commands
             + `create role admin_user;`
