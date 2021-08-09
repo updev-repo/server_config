@@ -290,6 +290,8 @@
 
 
 ## How To Secure Nginx with Let's Encrypt on Ubuntu 16.04
++ Reference
+    + https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04 
 + Installing Certbot
     + `sudo add-apt-repository ppa:certbot/certbot`
     + `sudo apt-get update`
