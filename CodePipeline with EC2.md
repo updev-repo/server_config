@@ -21,7 +21,7 @@ This document describe how to implement inference-preprocessing project to EC2 i
 + Install deploy agent with s3
   + ```
     sudo apt-get update
-    sudo apt-get install ruby2.0
+    sudo apt-get install ruby
     wget https://aws-codedeploy-us-west-1.s3.us-west-1.amazonaws.com/latest/install
     chmod +x ./install
     sudo ./install auto > /tmp/logfile
