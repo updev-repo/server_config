@@ -14,19 +14,20 @@ This document describe how to implement inference-preprocessing project to EC2 i
 
 ### Install code deploy agent 
 
-There are two way to install codedeploy agent
++ There are two way to install codedeploy agent
 
-Install it from S3 resources
++ Install it from S3 resources
 
-Install deploy agent with s3
-sudo apt-get update
-sudo apt-get install ruby2.0
-wget https://aws-codedeploy-us-west-1.s3.us-west-1.amazonaws.com/latest/install
-chmod +x ./install
-sudo ./install auto > /tmp/logfile
-sudo service codedeploy-agent status
-sudo service codedeploy-agent start
-
++ Install deploy agent with s3
+  + ```
+    sudo apt-get update
+    sudo apt-get install ruby2.0
+    wget https://aws-codedeploy-us-west-1.s3.us-west-1.amazonaws.com/latest/install
+    chmod +x ./install
+    sudo ./install auto > /tmp/logfile
+    sudo service codedeploy-agent status
+    sudo service codedeploy-agent start
+    ```
 When create code deploy group, there is setting to install code deploy agent to ec2. so we can use it
 
 ### Create code deploy application and application group
@@ -43,7 +44,6 @@ we have to add tag which is set in ec2 to match
 
   + Here is appspec.yaml to deploy
     + ```
-
       version: 0.0
       os: linux
       files:
@@ -74,5 +74,5 @@ we have to add tag which is set in ec2 to match
           - location: scripts/start_application.sh
             timeout: 6000
             runas: ubuntu
-      ```
+        ```
 
