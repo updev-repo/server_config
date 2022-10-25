@@ -19,7 +19,11 @@
         + `sudo apt-get install mysql-server`
         + `sudo apt-get install libmysqlclient-dev`
           or `sudo apt install default-libmysqlclient-dev`
-    
+    + mysql workbench
+        + `snap install mysql-workbench-community`
+        + `sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service`  
+
+
     + postgresql 10.0
         + install
             + `wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -`
