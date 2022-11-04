@@ -50,6 +50,8 @@
             + import sql `\i /home/gui/backup/dump.sql`
             + show all tables `\dt`
             + exit `\q`
+        + import dump to existing db
+            + `sudo -u postgres psql databasename < data_base_dump`
              
         + give user permission to access postgresql
             + `sudo nano /usr/lib/postgresql/10/data/postgresql.conf` 
