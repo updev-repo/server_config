@@ -19,6 +19,10 @@
         + `sudo apt-get install mysql-server`
         + `sudo apt-get install libmysqlclient-dev`
           or `sudo apt install default-libmysqlclient-dev`
+        + Change password command  
+            + `ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';`
+        + access to mysql
+            +   `mysql -u root -p`
     + mysql workbench
         + `snap install mysql-workbench-community`
         + `sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service`  
