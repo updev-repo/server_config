@@ -3,6 +3,8 @@
 ## SERVER ENVIRONMENT SETUP ON GOOGLE CLOUD COMPUTE ENGINE
 
 + setting environment
+    + pull project (set credential to avoid usernamd and pwd asking)
+        +   `git remote set-url origin https://<token>@github.com/updev-repo/repo-name`
     + node
         + `curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
         + `sudo apt install nodejs`
