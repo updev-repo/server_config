@@ -8,7 +8,9 @@
     + node
         + `curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -`
         + `sudo apt install nodejs`
-        
+    + redis
+        + `sudo apt install redis-server`
+        + `sudo systemctl status redis-server` 
     + python
         + `sudo apt install python-pip`
         + `sudo pip install virtualenv`
