@@ -304,6 +304,8 @@
     + https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04 
 + Installing Certbot
     + `sudo add-apt-repository ppa:certbot/certbot`
+    +  if it is not working the use below
+        +  `sudo apt install certbot python3-certbot-nginx`
     + `sudo apt-get update`
     + `sudo apt-get install python-certbot-nginx`
 + Setting up Nginx
