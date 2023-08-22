@@ -311,7 +311,7 @@
     +  if it is not working the use below
         +  `sudo apt install certbot python3-certbot-nginx`
     + `sudo apt-get update`
-    + `sudo apt-get install python-certbot-nginx`
+    + `sudo apt-get install python3-certbot-nginx`
 + Setting up Nginx
     + `sudo nano /etc/nginx/sites-available/xxx`
     + Find the existing server_name line and replace the underscore, _, with your domain name:
